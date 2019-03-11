@@ -89,16 +89,20 @@ async function getFinalResults(data,query,resultsOfRawJsonDataIndex){
      tempMap.set(i,measure);
 
     });
-    let mapDSC =  new Map([...tempMap.entries()].sort((a,b) => a[0] < b[0]));
+    let mapDSC =  new Map([...tempMap.entries()].sort((a,b) => a[0] <= b[0]));
 
     let final_array = await SortMap(mapDSC,Results,TempObject);
-    
+    console.log(final_array);
     
 return final_array;
 
 }
 
 async function SortMap(map,array,TempObject){
+    console.log('----------------------------------------')
+    console.log(map);
+    console.log(array);
+    console.log(TempObject);
     let ResultArray = array;
     console.log(map);
     await map.forEach(async (key,value) => {
