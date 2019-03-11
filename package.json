@@ -1,0 +1,22 @@
+{
+  "name": "elastic_search_from_scratch",
+  "version": "1.0.0",
+  "description": "attempt to make basic elastic search",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "lodash": "^4.17.11",
+    "mnemonist": "^0.27.2",
+    "natural": "^0.6.3",
+    "obliterator": "^1.5.0",
+    "path": "^0.12.7",
+    "random-token": "0.0.8"
+  }
+}
